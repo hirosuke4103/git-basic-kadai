@@ -1,0 +1,33 @@
+PS C:\Users\hiros\OneDrive\Desktop\git_test\git_tutorial> cd "C:\Users\hiros\OneDrive\Desktop\Git課題"
+PS C:\Users\hiros\OneDrive\Desktop\Git課題> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\hiros\OneDrive\Desktop\Git課題
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/06/29     15:10                git_challenge
+
+
+PS C:\Users\hiros\OneDrive\Desktop\Git課題> cd git_challenge
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git init
+Initialized empty Git repository in C:/Users/hiros/OneDrive/Desktop/Git課題/git_challenge/.git/
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git add hello_world.txt
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git commit -m "1回目のコミット"
+[main (root-commit) 984d61b] 1回目のコミット
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git commit -m "2回目のコミット"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git log 
+commit 984d61b4552796ffdce3aa8525142c01f659b794 (HEAD -> main)
+Author: hirofumi-suzuki <hirosuke4103@gmail.com>
+Date:   Sun Jun 29 15:17:31 2025 +0900
+
