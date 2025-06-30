@@ -7,21 +7,30 @@ PS C:\Users\hiros\OneDrive\Desktop\Git課題> mkdir git_challenge
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
-d-----        2025/06/29     17:01                git_challenge
+d-----        2025/06/30     14:11                git_challenge
 
 
-PS C:\Users\hiros\OneDrive\Desktop\Git課題> cd C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge
+PS C:\Users\hiros\OneDrive\Desktop\Git課題> cd git_challenge
 PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git init
 Initialized empty Git repository in C:/Users/hiros/OneDrive/Desktop/Git課題/git_challenge/.git/
-PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git add hello_world.txt
-PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git commit -m "１回 目のコミット"
-[main 5942a7f] １回目のコミット
- 1 file changed, 1 insertion(+)
-PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git add hello_world.txt
-PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git commit -m "２回 目のコミット"
-[main 58a0041] ２回目のコミット
- 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git add .
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git add .
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git commit -m "１回目のコミット"
+[main (root-commit) 6ebea7f] １回目のコミット
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git add .
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git commit -m "２回目のコミット"
+[main fe307f1] ２回目のコミット
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git log --online
+fatal: unrecognized argument: --online
 PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> git log --oneline
-58a0041 (HEAD -> main) ２回目のコミット
-5942a7f １回目のコミット
+fe307f1 (HEAD -> main) ２回目のコミット
+6ebea7f １回目のコミット
 PS C:\Users\hiros\OneDrive\Desktop\Git課題\git_challenge> 
